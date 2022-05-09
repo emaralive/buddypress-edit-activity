@@ -406,7 +406,7 @@ class BuddyBoss_Edit_Activity {
 		if( !$this->can_edit_activity( $activity ) )
 			return false;
 		
-		$content = stripslashes( $activity->content );
+		$content = stripslashes( html_entity_decode( $activity->content, ENT_QUOTES | ENT_HTML401, 'UTF-8' ) );
 		
 		//convert @mention anchor tags into plain text
 		$content = $this->strip_mention_tags( $content );
