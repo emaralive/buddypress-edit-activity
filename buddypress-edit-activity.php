@@ -1,12 +1,26 @@
 <?php
 /**
- * Plugin Name: BuddyPress Edit Activity
- * Plugin URI:  https://www.buddyboss.com/product/buddypress-edit-activity/
- * Description: Edit BuddyPress activity posts from the front-end
- * Author:      BuddyBoss
- * Author URI:  https://www.buddyboss.com/
- * Version:     1.1.1
+ * Plugin Name:       BuddyPress Edit Activity
+ * Plugin URI:        https://github.com/emaralive/buddypress-edit-activity
+ * Description:       Edit BuddyPress activity posts from the front-end
+ * Author:            BuddyBoss
+ * Author URI:        https://www.buddyboss.com/
+ * Version:           1.1.3
+ * Update URI:        https://github.com/emaralive/buddypress-edit-activity
+ * Requires at least: 3.8
+ * Requires PHP:      5.6
+ * Text Domain:       buddypress-edit-activity
+ * Domain Path:       /languages
+ * License:           GPLv3
+ * License URI:       http://www.gnu.org/licenses/gpl-3.0.html
  */
+
+/**
+ * ==================================================================================
+ * Special patch (1.1.3) provided by emaralive. See readme.txt for changelog.
+ * ==================================================================================
+ */
+
 // Exit if accessed directly
 if (!defined('ABSPATH'))
   exit;
@@ -18,7 +32,7 @@ if (!defined('ABSPATH'))
  */
 // Codebase version
 if (!defined( 'BUDDYBOSS_EDIT_ACTIVITY_PLUGIN_VERSION' ) ) {
-  define( 'BUDDYBOSS_EDIT_ACTIVITY_PLUGIN_VERSION', '1.1.1' );
+  define( 'BUDDYBOSS_EDIT_ACTIVITY_PLUGIN_VERSION', '1.1.3' );
 }
 
 // Database version

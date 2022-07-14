@@ -3,8 +3,8 @@ Contributors: buddyboss
 Donate link: https://www.buddyboss.com/donate/
 Tags: buddypress, social networking, activity, profiles, messaging, friends, groups, forums, notifications, settings, social, community, networks, networking
 Requires at least: 3.8
-Tested up to: 5.4
-Stable tag: 1.1.1
+Tested up to: 5.9
+Stable tag: 1.1.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -59,6 +59,14 @@ For BuddyPress customizations, submit your request at [BuddyBoss](https://www.bu
 2. **Admin** - Configuring plugin options
 
 == Changelog ==
+
+= 1.1.3 =
+* Changed - Changed character set encoding scheme
+
+= 1.1.2 =
+* Fix - Unable to edit activity post/comment/reply with combinatorial use of anchor tag and specific HTML entities
+* Tested with WordPress 5.9
+* Added - Additional plugin header fields
 
 = 1.1.1 =
 * Tested with WordPress 5.4

@@ -499,7 +499,7 @@ class BuddyBoss_Edit_Activity {
 			return '';
 		
 		$dom = new DOMDocument();
-		$dom->loadHTML($content);
+		$dom->loadHTML( mb_convert_encoding( $content, 'HTML-ENTITIES', 'UTF-8' ) );
 
 		$anchors = $dom->getElementsByTagName('a');
 		$len = $anchors->length;
@@ -528,8 +528,7 @@ class BuddyBoss_Edit_Activity {
 				$i--;
 			}
 		
-			$new_content = utf8_decode( $dom->saveHTML( $dom->documentElement ) );
-			//$new_content = $dom->saveHTML( $dom->documentElement );
+			$new_content = mb_convert_encoding( $dom->saveHTML( $dom->documentElement ), 'HTML-ENTITIES', 'UTF-8' );
 			$html_fragment = preg_replace( '/^<!DOCTYPE.+?>/', '', str_replace( array('<html>', '</html>', '<body>', '</body>'), array('', '', '', ''), $new_content ));
 
 			return trim( $html_fragment );
