@@ -5,7 +5,11 @@
  * Description:       Edit BuddyPress activity posts from the front-end
  * Author:            BuddyBoss
  * Author URI:        https://www.buddyboss.com/
+<<<<<<< HEAD
  * Version:           1.1.3
+=======
+ * Version:           1.1.2
+>>>>>>> main
  * Update URI:        https://github.com/emaralive/buddypress-edit-activity
  * Requires at least: 3.8
  * Requires PHP:      5.6
@@ -17,7 +21,11 @@
 
 /**
  * ==================================================================================
+<<<<<<< HEAD
  * Special patch (1.1.3) provided by emaralive. See readme.txt for changelog.
+=======
+ * Special patch (1.1.2) provided by emaralive. See readme.txt for changelog.
+>>>>>>> main
  * ==================================================================================
  */
 
@@ -32,7 +40,11 @@ if (!defined('ABSPATH'))
  */
 // Codebase version
 if (!defined( 'BUDDYBOSS_EDIT_ACTIVITY_PLUGIN_VERSION' ) ) {
+<<<<<<< HEAD
   define( 'BUDDYBOSS_EDIT_ACTIVITY_PLUGIN_VERSION', '1.1.3' );
+=======
+  define( 'BUDDYBOSS_EDIT_ACTIVITY_PLUGIN_VERSION', '1.1.2' );
+>>>>>>> main
 }
 
 // Database version
